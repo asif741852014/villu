@@ -1,0 +1,11 @@
+name: Handle Merge Group Event
+
+on: 
+  merge_group:
+
+jobs:
+  handle-merge-group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm Merge Group Trigger
+        run: echo "Merge Group event has been triggered!"
